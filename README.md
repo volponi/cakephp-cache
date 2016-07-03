@@ -24,6 +24,9 @@ The recommended way to install composer packages is:
 composer require dereuromark/cakephp-cache
 ```
 
+And to use this particular version (volponi) you can use the following steps:
+https://snippets.khromov.se/composer-use-your-own-fork-for-a-package/
+
 Also don't forget to load the plugin in your bootstrap:
 ```php
 Plugin::load('Cache');
