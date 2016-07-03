@@ -2,7 +2,6 @@
 namespace Cache\Routing\Filter;
 
 use Cake\Core\Configure;
-use Cake\Core\Plugin;
 use Cake\Event\Event;
 use Cake\Network\Request;
 use Cake\Network\Response;
@@ -64,7 +63,7 @@ class CacheFilter extends DispatcherFilter {
 		$content = file_get_contents($file);
 		$cacheInfo = $this->extractCacheInfo($content);
 		$cacheTime = $cacheInfo['time'];
-		
+
 		if ($cacheTime < time() && $cacheTime != 0) {
 			unlink($file);
 			return;
@@ -134,7 +133,7 @@ class CacheFilter extends DispatcherFilter {
 	 *
 	 * @param \Cake\Network\Request $request The request object to use.
 	 * @param \Cake\Network\Response $response The response object to use.
-	 * @param string $assetFile Path to the asset file in the file system
+	 * @param string $file Path to the asset file in the file system
 	 * @param string $ext The extension of the file to determine its mime type
 	 * @return void
 	 */
