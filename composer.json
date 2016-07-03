@@ -1,5 +1,5 @@
 {
-	"name": "dereuromark/cakephp-cache",
+	"name": "volponi/cakephp-cache",
 	"description": "Cache plugin for CakePHP",
 	"type": "cakephp-plugin",
 	"license": "MIT",
